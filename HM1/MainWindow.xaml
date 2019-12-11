@@ -1,0 +1,45 @@
+﻿<Window x:Class="HM1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HM1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" Margin="20" HorizontalAlignment="Center">
+                <StackPanel Orientation="Vertical">
+                    <Label>Число A</Label>
+                    <TextBox x:Name="NumA" Width="200" Height="20"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label>Число B</Label>
+                    <TextBox x:Name="NumB" Width="200" Height="20"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label>Число C</Label>
+                    <TextBox x:Name="NumC" Width="200" Height="20"></TextBox>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="20" HorizontalAlignment="Center">
+                <Button x:Name="DrawButton" Click="DrawButton_Click" Width="100" Height="20">Draw</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Center">
+                <StackPanel Orientation="Vertical">
+                    <Label>Количество квадратов по вертикали</Label>
+                    <TextBox x:Name="VerticalNumber" Width="100" Height="20" IsReadOnly="True"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label>Количество квадратов по горизонтали</Label>
+                    <TextBox x:Name="HorizontNumber" Width="100" Height="20" IsReadOnly="True"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label>Суммарное количество квадратов</Label>
+                    <TextBox x:Name="SummNumber" Width="100" Height="20" IsReadOnly="True"></TextBox>
+                </StackPanel>
+            </StackPanel>
+            <TextBox x:Name="MessageText" Height="20" IsReadOnly="True" Margin="20 0 20 0"></TextBox>
+        </StackPanel>
+    </Grid>
+</Window>
