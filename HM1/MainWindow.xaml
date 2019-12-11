@@ -39,7 +39,7 @@
                     <TextBox x:Name="SummNumber" Width="100" Height="20" IsReadOnly="True"></TextBox>
                 </StackPanel>
             </StackPanel>
-            <TextBox x:Name="MessageText" Height="20" IsReadOnly="True" Margin="20 0 20 0"></TextBox>
+            <TextBox x:Name="MessageText" Height="100" IsReadOnly="True" Margin="20 0 20 0"></TextBox>
         </StackPanel>
     </Grid>
 </Window>

@@ -12,9 +12,26 @@ namespace HM1
         private int sideB;
         private int sideC;
 
+        private string message;
+
         private int numOfRectHorizontal;
         private int numOfRectVertical;
         private int numOfRectSumm;
+
+        public string Message { get => message;
+            set
+            {
+                if(message != "")
+                {
+                    message += "; ";
+                    message += value;
+                }
+                else
+                {
+                    message += value;
+                }
+            }
+        }
 
         public int SideA
         {
@@ -64,10 +81,12 @@ namespace HM1
                 {
                     if (value > sideA)
                     {
+                        Message = "Сторона квадрата больше стороны A";
                         sideC = sideA;
                     }
                     if (value > sideB)
                     {
+                        Message = "Сторона квадрата больше стороны B";
                         sideC = sideB;
                     }
                 }
